@@ -8,6 +8,18 @@
 <script>
 import NavBar from '~/components/NavBar'
 export default {
+  head() {
+    return {
+      titleTemplate: '%s – uvesilva',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'This is a description for my page'
+        }
+      ]
+    }
+  },
   components: {
     NavBar
   }
