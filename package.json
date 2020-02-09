@@ -7,9 +7,10 @@
   "scripts": {
     "dev": "nuxt --open",
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "PORT=4000 nuxt start --open",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "nuxt": "^2.0.0",
