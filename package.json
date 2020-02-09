@@ -5,12 +5,14 @@
   "author": "Victor Silva",
   "private": true,
   "scripts": {
-    "dev": "nuxt --open",
+    "dev": "nuxt",
     "build": "nuxt build",
-    "start": "PORT=4000 nuxt start --open",
+    "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "heroku-postbuild": "npm run build"
+    "heroku-postbuild": "npm run build",
+    "dev-open": "PORT=2000 nuxt --open",
+    "start-open": "PORT=4000 nuxt start --open"
   },
   "dependencies": {
     "nuxt": "^2.0.0",
